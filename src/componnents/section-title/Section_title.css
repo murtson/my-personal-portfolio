@@ -1,0 +1,26 @@
+.section_title {
+  width: 100%;
+  text-align: left;
+}
+
+.section_title .title--section {
+  font-size: 30px;
+  color: black;
+  font-weight: 600;
+  margin: 15px 0;
+  text-transform: uppercase;
+}
+
+.section_title .text--section {
+  font-size: 20px;
+  color: #5d5d5d;
+  font-weight: 400;
+  margin: 15px 0;
+  max-width: 650px;
+}
+
+.section_title .section_ending {
+  margin-top: 30px;
+  border: 1px solid #b9c3d1;
+}
+/*# sourceMappingURL=Section_title.css.map */

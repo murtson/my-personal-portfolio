@@ -1,0 +1,9 @@
+.Competence_section {
+  padding: 8%;
+}
+
+.Competence_section .competence_card__container {
+  display: -ms-grid;
+  display: grid;
+}
+/*# sourceMappingURL=Competence_section.css.map */
