@@ -3,5 +3,8 @@
 
   .competence_card__container {
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-auto-rows: 380px;
+    gap: 50px;
   }
 }

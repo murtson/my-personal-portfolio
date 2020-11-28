@@ -1,2 +1,51 @@
 .competence_card {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .green {
+    background: linear-gradient(180deg, #a2fbf1, #1bc8b1);
+  }
+
+  .blue {
+    background: linear-gradient(180deg, #7fdafc, #3388d2);
+  }
+
+  .pink {
+    background: linear-gradient(180deg, #ffb8f1, #ee75ce);
+  }
+
+  .orange {
+    background: linear-gradient(180deg, #fee4cb, #ff9751);
+  }
+
+  .competence_card__icon_container {
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .competence_card__text_container {
+    max-width: 290px;
+
+    .title--competence_card {
+      font-size: 30px;
+      font-weight: 600;
+      color: #5d5d5d;
+      text-align: center;
+      margin: 20px 0;
+    }
+    .text--competence_card {
+      text-align: center;
+      color: #5d5d5d;
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
 }

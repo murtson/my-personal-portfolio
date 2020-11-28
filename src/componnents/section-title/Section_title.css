@@ -1,6 +1,7 @@
 .section_title {
   width: 100%;
-  text-align: left;
+  text-align: center;
+  margin-bottom: 100px;
 }
 
 .section_title .title--section {
@@ -15,8 +16,9 @@
   font-size: 20px;
   color: #5d5d5d;
   font-weight: 400;
-  margin: 15px 0;
-  max-width: 650px;
+  margin: 15px auto;
+  width: auto;
+  max-width: 980px;
 }
 
 .section_title .section_ending {

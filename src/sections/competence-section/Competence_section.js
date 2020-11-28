@@ -13,10 +13,22 @@ const Competence_section = () => {
         can be downloaded down below.
       </SectionTitle>
       <div className='competence_card__container'>
-        <CompetenceCard></CompetenceCard>
-        <CompetenceCard></CompetenceCard>
-        <CompetenceCard></CompetenceCard>
-        <CompetenceCard></CompetenceCard>
+        <CompetenceCard color='green' title='Javascript'>
+          Worked on varies different projects involving Javascript. Proficient
+          with popular frameworks such as React JS and Meteor JS
+        </CompetenceCard>
+        <CompetenceCard color='blue' title='HTML/CSS'>
+          Worked on varies different projects involving Javascript. Proficient
+          with popular frameworks such as React JS and Meteor JS
+        </CompetenceCard>
+        <CompetenceCard color='pink' title='Python'>
+          Worked on varies different projects involving Javascript. Proficient
+          with popular frameworks such as React JS and Meteor JS
+        </CompetenceCard>
+        <CompetenceCard color='orange' title='Java'>
+          Worked on varies different projects involving Javascript. Proficient
+          with popular frameworks such as React JS and Meteor JS
+        </CompetenceCard>
       </div>
     </div>
   );
