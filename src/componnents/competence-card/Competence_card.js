@@ -1,16 +1,26 @@
 import React from "react";
 import "./Competence_card.css";
-import JavascriptIcon from "../../assets/icons/javascript.svg";
 
 const Competence_card = (props) => {
   return (
-    <div className='competence_card'>
-      <div className={`competence_card__icon_container ${props.color}`}>
-        <img src={JavascriptIcon} alt='icon'></img>
+    <div className='competence-card'>
+      <div className={`icon-container ${props.color}`}>
+        <img src={props.icon} alt='icon' className='competence-icon'></img>
       </div>
-      <div className='competence_card__text_container'>
-        <h4 className='title--competence_card'>{props.title}</h4>
-        <p className='text--competence_card'>{props.children}</p>
+      <div className='text-container'>
+        <h4 className='competence-title'>{props.title}</h4>
+        <p className='competence-text'>{props.children}</p>
+      </div>
+      <div className='progress-bar-container'>
+        <div className='progress-bar-stats-container'>
+          <p className='stats--year'>{props.time}</p>
+          <p className='stats--percent'>{props.percent} %</p>
+        </div>
+        <div className='progress-bar--background'>
+          <div
+            className={`progress-bar--progress width-${props.percent}`}
+          ></div>
+        </div>
       </div>
     </div>
   );

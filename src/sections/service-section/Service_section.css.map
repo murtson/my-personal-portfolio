@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,gBAAgB,CAAC;EACf,OAAO,EAAE,mBAAmB;CAU7B;;AAXD,AAGE,gBAHc,CAGd,wBAAwB,CAAC;EACvB,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,oCAAoC;EAC3D,SAAS,EAAE,MAAM;EACjB,MAAM,EAAE,MAAM;EACd,GAAG,EAAE,IAAI;EACT,cAAc,EAAE,oBAAoB;CACrC",
+    "sources": [
+        "Service_section.scss"
+    ],
+    "names": [],
+    "file": "Service_section.css"
+}

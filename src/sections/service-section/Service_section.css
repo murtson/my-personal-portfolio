@@ -1,0 +1,15 @@
+.Service-section {
+  padding: 0 200px 200px 200px;
+}
+
+.Service-section .service-cards-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  max-width: 1280px;
+  margin: 0 auto;
+  gap: 20px;
+  grid-auto-rows: minmax(280px, 400px);
+}
+/*# sourceMappingURL=Service_section.css.map */
