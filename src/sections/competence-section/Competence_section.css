@@ -1,9 +1,9 @@
 .Competence_section {
-  padding: 200px;
+  padding: 6%;
 }
 
 .Competence_section .competence_card__container {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: auto;
   display: -ms-grid;
   display: grid;
@@ -15,7 +15,7 @@
 
 .Competence_section .education-section--container {
   padding-top: 180px;
-  max-width: 1200px;
+  max-width: 1280px;
   gap: 75px;
   display: -ms-grid;
   display: grid;

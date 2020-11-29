@@ -1,0 +1,109 @@
+.project-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: 0 0 60px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 60px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+
+.picture-right {
+  border-radius: 0 20px 20px 0;
+}
+
+.picture-left {
+  border-radius: 20px 0 0 20px;
+}
+
+.picture-side--project-card {
+  width: 50%;
+  height: 100%;
+}
+
+.pattern--project-card {
+  width: 100%;
+  height: 100%;
+}
+
+.card-color--green {
+  background-image: url("../../assets/images/project-card-bg-green.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-color--purple {
+  background-image: url("../../assets/images/project-card-pattern-bg-purple.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.button-color--green {
+  background: linear-gradient(45deg, #04d178, #7ae693);
+}
+
+.button-color--purple {
+  background: linear-gradient(45deg, #476ff3, #7cbef8);
+}
+
+.information-side--project-card {
+  width: 50%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 8% 8%;
+}
+
+.information-side--project-card .text-container {
+  height: 50%;
+  width: 100%;
+}
+
+.information-side--project-card .button-container {
+  height: 50%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.information-side--project-card .button--project-card {
+  width: 220px;
+  height: 52px;
+  color: white;
+  border-radius: 30px;
+  border: none;
+  font-weight: 600;
+  font-family: inherit;
+  font-size: 12px;
+}
+
+.information-side--project-card h2 {
+  font-size: 35px;
+  color: black;
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+  margin: 0 0 10px 0;
+}
+
+.information-side--project-card h5 {
+  font-size: 20px;
+  color: #5d5d5d;
+  font-weight: 300;
+  text-align: center;
+  width: 100%;
+  margin: 0 0 30px 0;
+}
+/*# sourceMappingURL=Project_card.css.map */

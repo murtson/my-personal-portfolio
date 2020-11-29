@@ -3,6 +3,8 @@ import "./Home_page.css";
 import LandingSection from "../../sections/landing-section/Landing_section";
 import CompetenceSection from "../../sections/competence-section/Competence_section";
 import ServiceSection from "../../sections/service-section/Service_section";
+import ProjectsSection from "../../sections/projects-section/Projects_section";
+import Footer from "../../componnents/footer/Footer";
 
 const HomePage = (props) => {
   return (
@@ -10,6 +12,8 @@ const HomePage = (props) => {
       <LandingSection />
       <CompetenceSection />
       <ServiceSection />
+      <ProjectsSection />
+      <Footer />
     </div>
   );
 };
