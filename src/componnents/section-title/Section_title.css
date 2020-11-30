@@ -5,7 +5,7 @@
 }
 
 .section_title .title--section {
-  font-size: 35px;
+  font-size: 50px;
   color: black;
   font-weight: 700;
   margin: 15px 0;
@@ -13,7 +13,7 @@
 }
 
 .section_title .text--section {
-  font-size: 22px;
+  font-size: 25px;
   color: #5d5d5d;
   font-weight: 400;
   margin: 15px auto;
@@ -24,5 +24,20 @@
 .section_title .section_ending {
   margin-top: 30px;
   border: 1px solid #b9c3d1;
+}
+
+@media all and (max-width: 480px) {
+  .section_title {
+    margin-bottom: 50px;
+  }
+  .section_title .title--section {
+    font-size: 22px;
+    margin: 15px 0;
+  }
+  .section_title .text--section {
+    font-size: 16px;
+    color: #5d5d5d;
+    margin: 15px auto;
+  }
 }
 /*# sourceMappingURL=Section_title.css.map */

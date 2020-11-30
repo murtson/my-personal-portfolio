@@ -4,7 +4,7 @@
   margin-bottom: 6%;
 
   .title--section {
-    font-size: 35px;
+    font-size: 50px;
     color: black;
     font-weight: 700;
     margin: 15px 0;
@@ -12,7 +12,7 @@
   }
 
   .text--section {
-    font-size: 22px;
+    font-size: 25px;
     color: #5d5d5d;
     font-weight: 400;
     margin: 15px auto;
@@ -23,5 +23,19 @@
   .section_ending {
     margin-top: 30px;
     border: 1px solid #b9c3d1;
+  }
+
+  @media all and (max-width: 480px) {
+    margin-bottom: 50px;
+    .title--section {
+      font-size: 22px;
+      margin: 15px 0;
+    }
+
+    .text--section {
+      font-size: 16px;
+      color: #5d5d5d;
+      margin: 15px auto;
+    }
   }
 }

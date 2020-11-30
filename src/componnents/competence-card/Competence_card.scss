@@ -40,18 +40,19 @@
   .text-container {
     //max-width: 230px;
     .competence-title {
-      font-size: 24px;
+      font-size: 30px;
       font-weight: 600;
       color: #5d5d5d;
       text-align: center;
-      margin: 10px 0;
+      margin: 20px 0;
     }
     .competence-text {
       text-align: center;
       color: #5d5d5d;
-      font-size: 16px;
+      font-size: 20px;
       font-weight: 500;
       line-height: 1.6;
+      margin: 0 0 10px 0;
     }
   }
 
@@ -77,6 +78,10 @@
     .progress-bar-stats-container {
       display: flex;
       justify-content: space-between;
+
+      p {
+        font-size: 22px;
+      }
     }
 
     .progress-bar--background {
@@ -91,6 +96,54 @@
       height: 12px;
       background: linear-gradient(45deg, #6431f6, #fc8ab5);
       border-radius: 10px;
+    }
+  }
+
+  @media all and (max-width: 480px) {
+    .icon-container {
+      height: 80px;
+      width: 80px;
+      border-radius: 50%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .competence-icon {
+        height: 40px;
+        width: 40px;
+      }
+    }
+
+    .progress-bar-container {
+      padding: 0 20px;
+
+      .progress-bar-stats-container {
+        p {
+          font-size: 16px;
+          margin: 5px 0;
+        }
+      }
+
+      .progress-bar--background {
+        height: 8px;
+      }
+      .progress-bar--progress {
+        height: 8px;
+      }
+    }
+
+    .text-container {
+      .competence-title {
+        font-size: 18px;
+        font-weight: 600;
+        color: #5d5d5d;
+        text-align: center;
+        margin: 10px 0;
+      }
+      .competence-text {
+        display: none;
+      }
     }
   }
 }

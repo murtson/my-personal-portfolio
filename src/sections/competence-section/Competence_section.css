@@ -9,12 +9,12 @@
   display: grid;
   -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-auto-rows: minmax(280px, 380px);
+  grid-auto-rows: auto;
   gap: 50px;
 }
 
 .Competence_section .education-section--container {
-  padding-top: 180px;
+  padding-top: 6%;
   max-width: 1280px;
   gap: 75px;
   display: -ms-grid;
@@ -40,6 +40,8 @@
   border-radius: 8px;
   border: none;
   font-weight: 500;
+  font-family: inherit;
+  font-size: 18px;
 }
 
 .Competence_section .education-section--container .text-container .button-wrapper .CV-button-background {
@@ -54,7 +56,7 @@
 }
 
 .Competence_section .education-section--container .text-container h4 {
-  font-size: 24px;
+  font-size: 32px;
   margin: 10px 0;
   font-weight: 700;
   text-transform: uppercase;
@@ -62,7 +64,7 @@
 
 .Competence_section .education-section--container .text-container p {
   color: #5d5d5d;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 500;
   line-height: 1.6;
 }
@@ -84,5 +86,31 @@
 .Competence_section .education-section--container .image-container img {
   height: 250px;
   width: auto;
+}
+
+@media all and (max-width: 480px) {
+  .Competence_section .competence_card__container {
+    -ms-grid-columns: (minmax(100px, 1fr))[2];
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
+    gap: 35px;
+  }
+  .Competence_section .education-section--container {
+    -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding-top: 50px;
+  }
+  .Competence_section .education-section--container .text-container .button-wrapper {
+    display: none;
+  }
+  .Competence_section .education-section--container .text-container h4 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  .Competence_section .education-section--container .text-container p {
+    font-size: 14px;
+  }
+  .Competence_section .education-section--container .image-container {
+    display: none;
+  }
 }
 /*# sourceMappingURL=Competence_section.css.map */

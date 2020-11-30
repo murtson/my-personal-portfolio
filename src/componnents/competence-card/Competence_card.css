@@ -57,19 +57,20 @@
 }
 
 .competence-card .text-container .competence-title {
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 600;
   color: #5d5d5d;
   text-align: center;
-  margin: 10px 0;
+  margin: 20px 0;
 }
 
 .competence-card .text-container .competence-text {
   text-align: center;
   color: #5d5d5d;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 500;
   line-height: 1.6;
+  margin: 0 0 10px 0;
 }
 
 .competence-card .progress-bar-container {
@@ -101,6 +102,10 @@
           justify-content: space-between;
 }
 
+.competence-card .progress-bar-container .progress-bar-stats-container p {
+  font-size: 22px;
+}
+
 .competence-card .progress-bar-container .progress-bar--background {
   width: 100%;
   height: 12px;
@@ -114,5 +119,49 @@
   height: 12px;
   background: linear-gradient(45deg, #6431f6, #fc8ab5);
   border-radius: 10px;
+}
+
+@media all and (max-width: 480px) {
+  .competence-card .icon-container {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .competence-card .icon-container .competence-icon {
+    height: 40px;
+    width: 40px;
+  }
+  .competence-card .progress-bar-container {
+    padding: 0 20px;
+  }
+  .competence-card .progress-bar-container .progress-bar-stats-container p {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  .competence-card .progress-bar-container .progress-bar--background {
+    height: 8px;
+  }
+  .competence-card .progress-bar-container .progress-bar--progress {
+    height: 8px;
+  }
+  .competence-card .text-container .competence-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #5d5d5d;
+    text-align: center;
+    margin: 10px 0;
+  }
+  .competence-card .text-container .competence-text {
+    display: none;
+  }
 }
 /*# sourceMappingURL=Competence_card.css.map */

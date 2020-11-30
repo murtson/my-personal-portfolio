@@ -6,4 +6,60 @@
   background-image: url("../../assets/images/footer-bg.svg");
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .footer-content-container {
+    max-width: 1280px;
+    h2 {
+      color: white;
+      font-size: 50px;
+      max-width: 40%;
+    }
+
+    .text-button-container {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      margin: 50px 0 200px 0;
+      h5 {
+        max-width: 60%;
+        color: white;
+        opacity: 90%;
+        font-weight: 400;
+        font-size: 24px;
+        margin: 0;
+        line-height: 1.6;
+      }
+      .footer-button {
+        color: white;
+        width: 260px;
+        font-family: inherit;
+        height: 70px;
+        background: linear-gradient(45deg, #6eb8fb, #46a5f8);
+        border-radius: 10px;
+        border: none;
+        font-size: 24px;
+        font-weight: 500;
+      }
+    }
+
+    .footer-links-container {
+      display: flex;
+      align-items: center;
+      max-width: 60%;
+      justify-content: space-between;
+
+      .footer-link {
+        .title-container--footer-link {
+          h5 {
+            color: white;
+            font-size: 24px;
+            margin: 10px 0;
+          }
+        }
+      }
+    }
+  }
 }

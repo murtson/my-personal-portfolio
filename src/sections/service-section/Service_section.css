@@ -13,4 +13,10 @@
   gap: 20px;
   grid-auto-rows: minmax(280px, 400px);
 }
+
+@media all and (max-width: 480px) {
+  .Service-section .service-cards-container {
+    grid-auto-rows: minmax(280px, 300px);
+  }
+}
 /*# sourceMappingURL=Service_section.css.map */
