@@ -5,8 +5,6 @@ import WorkingMan from "../../assets/images/working-man.svg";
 import Background from "../../assets/images/lp-bg.svg";
 
 const LandingSection = () => {
-  const isMobile = useMediaQuery({ query: "(max-width: 760px)" });
-
   return (
     <div className='landing_section'>
       <div className='background_container'>

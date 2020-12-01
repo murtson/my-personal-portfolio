@@ -15,6 +15,9 @@
 }
 
 @media all and (max-width: 480px) {
+  .Service-section {
+    padding-bottom: 75px;
+  }
   .Service-section .service-cards-container {
     grid-auto-rows: minmax(280px, 300px);
   }

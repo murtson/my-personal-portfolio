@@ -3,97 +3,140 @@
   flex-direction: row;
   width: 100%;
   height: 100%;
-
   box-shadow: 0 0 60px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
-}
 
-.picture-right {
-  border-radius: 0 20px 20px 0;
-}
-
-.picture-left {
-  border-radius: 20px 0 0 20px;
-}
-
-.picture-side--project-card {
-  width: 50%;
-  height: 100%;
-}
-
-.pattern--project-card {
-  width: 100%;
-  height: 100%;
-}
-
-.card-color--green {
-  //background: linear-gradient(130deg, #5df3e5, #6ad896);
-  background-image: url("../../assets/images/project-card-bg-green.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.card-color--purple {
-  //background: linear-gradient(130deg, #4c4cf8, #9779ec);
-  background-image: url("../../assets/images/project-card-pattern-bg-purple.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.button-color--green {
-  background: linear-gradient(45deg, #04d178, #7ae693);
-}
-
-.button-color--purple {
-  background: linear-gradient(45deg, #476ff3, #7cbef8);
-}
-
-.information-side--project-card {
-  width: 50%;
-  height: 100%;
-  box-sizing: border-box;
-  padding: 8% 8%;
-
-  .text-container {
-    height: 50%;
-    width: 100%;
+  .picture-right {
+    border-radius: 0 20px 20px 0;
   }
 
-  .button-container {
-    height: 50%;
-    width: 100%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
+  .picture-left {
+    border-radius: 20px 0 0 20px;
   }
 
-  .button--project-card {
-    width: 220px;
-    height: 52px;
-    color: white;
-    border-radius: 30px;
-    border: none;
-    font-weight: 600;
-    font-family: inherit;
-
-    font-size: 12px;
+  .picture-side--project-card {
+    width: 50%;
+    height: 100%;
   }
 
-  h2 {
-    font-size: 35px;
-    color: black;
-    font-weight: 600;
-    text-align: center;
+  .pattern--project-card {
     width: 100%;
-    margin: 0 0 10px 0;
+    height: 100%;
   }
 
-  h5 {
-    font-size: 20px;
-    color: #5d5d5d;
-    font-weight: 300;
-    text-align: center;
-    width: 100%;
-    margin: 0 0 30px 0;
+  .card-color--green {
+    //background: linear-gradient(130deg, #5df3e5, #6ad896);
+    background-image: url("../../assets/images/project-card-bg-green.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .card-color--purple {
+    //background: linear-gradient(130deg, #4c4cf8, #9779ec);
+    background-image: url("../../assets/images/project-card-pattern-bg-purple.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .button-color--green {
+    background: linear-gradient(45deg, #6ad896, #5df3e5);
+  }
+
+  .button-color--purple {
+    background: linear-gradient(45deg, #476ff3, #7cbef8);
+  }
+
+  .information-side--project-card {
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 9% 8%;
+
+    .text-container {
+      height: 50%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .button-container {
+      height: 50%;
+      width: 100%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+
+      .button--project-card {
+        width: 220px;
+        height: 52px;
+        color: white;
+        border-radius: 30px;
+        border: none;
+        font-weight: 600;
+        font-family: inherit;
+        font-size: 16px;
+      }
+    }
+
+    h2 {
+      font-size: 35px;
+      color: rgba(0, 0, 0, 0.85);
+      font-weight: 600;
+      text-align: center;
+      width: 100%;
+      margin: 0 0 10px 0;
+    }
+
+    h5 {
+      font-size: 20px;
+      color: #5d5d5d;
+      font-weight: 300;
+      text-align: center;
+      width: 100%;
+      margin: 0;
+    }
+  }
+
+  @media all and (max-width: 780px) {
+    flex-direction: column;
+    border-radius: 10px;
+
+    .picture-side--project-card {
+      height: 50%;
+      width: 100%;
+    }
+
+    .picture-right {
+      border-radius: 10px 10px 0 0;
+    }
+
+    .information-side--project-card {
+      height: 50%;
+      width: 100%;
+
+      .text-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h5 {
+          font-size: 18px;
+          margin: 0;
+        }
+
+        h2 {
+          font-size: 22px;
+        }
+      }
+
+      .button-container {
+        .button--project-card {
+          font-size: 14px;
+        }
+      }
+    }
   }
 }
