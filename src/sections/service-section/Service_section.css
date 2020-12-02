@@ -1,5 +1,6 @@
 .Service-section {
   padding: 0 6% 6% 6%;
+  overflow: hidden;
 }
 
 .Service-section .service-cards-container {
@@ -9,12 +10,11 @@
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   max-width: 1280px;
   margin: 0 auto;
-  gap: 1fr;
   gap: 20px;
-  grid-auto-rows: minmax(280px, 400px);
+  grid-auto-rows: 400px;
 }
 
-@media all and (max-width: 480px) {
+@media all and (max-width: 780px) {
   .Service-section {
     padding-bottom: 75px;
   }

@@ -3,9 +3,9 @@ import "./Section_title.css";
 
 const Section_title = (props) => {
   return (
-    <div className='section_title'>
-      <h1 className='title--section'>{props.title}</h1>
-      <h4 className='text--section'>{props.children}</h4>
+    <div className='section-title'>
+      <h3 className='title--section'>{props.title}</h3>
+      <h5 className='subtitle--section'>{props.children}</h5>
       {/* <hr className='section_ending' /> */}
     </div>
   );

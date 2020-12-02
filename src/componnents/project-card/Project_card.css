@@ -10,15 +10,15 @@
   height: 100%;
   -webkit-box-shadow: 0 0 60px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 60px rgba(0, 0, 0, 0.2);
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .project-card .picture-right {
-  border-radius: 0 20px 20px 0;
+  border-radius: 0 10px 10px 0;
 }
 
 .project-card .picture-left {
-  border-radius: 20px 0 0 20px;
+  border-radius: 10px 0 0 10px;
 }
 
 .project-card .picture-side--project-card {
@@ -32,15 +32,17 @@
 }
 
 .project-card .card-color--green {
-  background-image: url("../../assets/images/project-card-bg-green.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: linear-gradient(130deg, #5df3e5, #6ad896);
+  /*  background-image: url("../../assets/images/project-card-bg-green.svg");
+    background-repeat: no-repeat;
+    background-size: cover; */
 }
 
 .project-card .card-color--purple {
-  background-image: url("../../assets/images/project-card-pattern-bg-purple.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: linear-gradient(130deg, #4c4cf8, #9779ec);
+  /* background-image: url("../../assets/images/project-card-pattern-bg-purple.svg");
+    background-repeat: no-repeat;
+    background-size: cover; */
 }
 
 .project-card .button-color--green {

@@ -14,29 +14,10 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  /* ----------- RESPONSIVNESS  -----------  */
 }
 
-.competence-card .green {
-  background: -webkit-gradient(linear, left top, left bottom, from(#a2fbf1), to(#1bc8b1));
-  background: linear-gradient(180deg, #a2fbf1, #1bc8b1);
-}
-
-.competence-card .blue {
-  background: -webkit-gradient(linear, left top, left bottom, from(#7fdafc), to(#3388d2));
-  background: linear-gradient(180deg, #7fdafc, #3388d2);
-}
-
-.competence-card .pink {
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffb8f1), to(#ee75ce));
-  background: linear-gradient(180deg, #ffb8f1, #ee75ce);
-}
-
-.competence-card .orange {
-  background: -webkit-gradient(linear, left top, left bottom, from(#fee4cb), to(#ff9751));
-  background: linear-gradient(180deg, #fee4cb, #ff9751);
-}
-
-.competence-card .icon-container {
+.competence-card .competence-card__icon-container {
   height: 100px;
   width: 100px;
   border-radius: 50%;
@@ -51,49 +32,47 @@
           align-items: center;
 }
 
-.competence-card .icon-container .competence-icon {
+.competence-card .competence-card__icon-container .competence-card__competence-icon {
   height: 50px;
   width: 50px;
 }
 
-.competence-card .text-container .competence-title {
-  font-size: 30px;
-  font-weight: 600;
-  color: #5d5d5d;
-  text-align: center;
-  margin: 20px 0;
+.competence-card .icon-container-color--green {
+  background: -webkit-gradient(linear, left top, left bottom, from(#a2fbf1), to(#1bc8b1));
+  background: linear-gradient(180deg, #a2fbf1, #1bc8b1);
 }
 
-.competence-card .text-container .competence-text {
+.competence-card .icon-container-color--blue {
+  background: -webkit-gradient(linear, left top, left bottom, from(#7fdafc), to(#3388d2));
+  background: linear-gradient(180deg, #7fdafc, #3388d2);
+}
+
+.competence-card .icon-container-color--pink {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffb8f1), to(#ee75ce));
+  background: linear-gradient(180deg, #ffb8f1, #ee75ce);
+}
+
+.competence-card .icon-container-color--orange {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fee4cb), to(#ff9751));
+  background: linear-gradient(180deg, #fee4cb, #ff9751);
+}
+
+.competence-card .competence-card__text-container .competence-card__title {
   text-align: center;
-  color: #5d5d5d;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.6;
+  margin: 20px 0;
+  font-weight: 600;
+}
+
+.competence-card .competence-card__text-container .competence--card__text {
+  text-align: center;
   margin: 0 0 10px 0;
 }
 
-.competence-card .progress-bar-container {
+.competence-card .competence-card__progress-container {
   width: 95%;
 }
 
-.competence-card .progress-bar-container .width-90 {
-  width: 90%;
-}
-
-.competence-card .progress-bar-container .width-80 {
-  width: 80%;
-}
-
-.competence-card .progress-bar-container .width-50 {
-  width: 50%;
-}
-
-.competence-card .progress-bar-container .width-0 {
-  width: 0%;
-}
-
-.competence-card .progress-bar-container .progress-bar-stats-container {
+.competence-card .competence-card__progress-container .progress-bar__stats-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -102,11 +81,7 @@
           justify-content: space-between;
 }
 
-.competence-card .progress-bar-container .progress-bar-stats-container p {
-  font-size: 22px;
-}
-
-.competence-card .progress-bar-container .progress-bar--background {
+.competence-card .competence-card__progress-container .progress-bar__bar-background {
   width: 100%;
   height: 12px;
   color: white;
@@ -115,14 +90,30 @@
           box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
 }
 
-.competence-card .progress-bar-container .progress-bar--progress {
+.competence-card .competence-card__progress-container .progress-bar__bar-background .progress-bar__bar-progress {
   height: 12px;
   background: linear-gradient(45deg, #6431f6, #fc8ab5);
   border-radius: 10px;
 }
 
-@media all and (max-width: 480px) {
-  .competence-card .icon-container {
+.competence-card .competence-card__progress-container .progress-width--90 {
+  width: 90%;
+}
+
+.competence-card .competence-card__progress-container .progress-width--80 {
+  width: 80%;
+}
+
+.competence-card .competence-card__progress-container .progress-width--50 {
+  width: 50%;
+}
+
+.competence-card .competence-card__progress-container .progress-width--0 {
+  width: 0%;
+}
+
+@media all and (max-width: 780px) {
+  .competence-card .competence-card__icon-container {
     height: 80px;
     width: 80px;
     border-radius: 50%;
@@ -136,31 +127,28 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .competence-card .icon-container .competence-icon {
+  .competence-card .competence-card__icon-container .competence-card__competence-icon {
     height: 40px;
     width: 40px;
   }
-  .competence-card .progress-bar-container {
+  .competence-card .competence-card__progress-container {
     padding: 0 20px;
   }
-  .competence-card .progress-bar-container .progress-bar-stats-container p {
-    font-size: 16px;
+  .competence-card .competence-card__progress-container .progress-bar__stats-container p {
     margin: 5px 0;
   }
-  .competence-card .progress-bar-container .progress-bar--background {
+  .competence-card .competence-card__progress-container .progress-bar__bar-background {
     height: 8px;
   }
-  .competence-card .progress-bar-container .progress-bar--progress {
+  .competence-card .competence-card__progress-container .progress-bar__bar-progress {
     height: 8px;
   }
-  .competence-card .text-container .competence-title {
-    font-size: 18px;
-    font-weight: 600;
+  .competence-card .competence-card__text-container .competence-card__title {
     color: #5d5d5d;
     text-align: center;
     margin: 10px 0;
   }
-  .competence-card .text-container .competence-text {
+  .competence-card .competence-card__text-container .competence--card__text {
     display: none;
   }
 }

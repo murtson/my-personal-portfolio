@@ -1,13 +1,40 @@
-.landing_section {
+.landing-section {
   width: 100vw;
   height: 100vh;
-  //   background: url("../../assets/images/lp-bg.svg") no-repeat;
-  //   background-size: cover 500px 500px;
+  max-height: 1080px;
   background-color: #eaecf3;
   position: relative;
   overflow: hidden;
 
-  .text_container {
+  //   background: url("../../assets/images/lp-bg.svg") no-repeat;
+  //   background-size: cover 500px 500px;
+
+  .landing-section__background-container {
+    height: 100vh;
+    max-height: 1080px;
+    position: relative;
+    overflow: hidden;
+
+    .background-container__background-pattern {
+      position: absolute;
+      width: 100%;
+      top: -20%;
+      z-index: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .background-container__figure {
+      position: absolute;
+      bottom: 0;
+      right: 15%;
+      height: 900px;
+      width: 900px;
+      z-index: 1;
+    }
+  }
+
+  .landing-section__text-container {
     position: absolute;
     left: 30%;
     transform: translateX(-50%);
@@ -15,128 +42,78 @@
     text-align: center;
     z-index: 2;
 
-    .title--landing_section {
+    .landing-section__title {
       color: white;
-      font-size: 90px;
       margin: 15px;
-      font-weight: 500;
     }
 
-    .subtitle--landing_section {
+    .landing-section__subtitle {
       color: white;
-      font-weight: 300;
-      font-size: 35px;
       margin: 15px;
     }
-    .button--landing_section {
+
+    .landing-section__button {
       width: 280px;
-      height: 70px;
+      height: 60px;
       background-color: #f95884;
       border-radius: 50px;
       border-style: none;
       margin: 15px;
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 600;
       font-family: inherit;
       color: white;
     }
   }
 
-  .background_container {
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
-
-    .background__pattern {
-      position: absolute;
-      width: 100%;
-      top: 0;
-      z-index: 0;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    .background__working_man {
-      position: absolute;
-      bottom: 0;
-      right: 15%;
-      height: 1300px;
-      width: 1300px;
-      z-index: 1;
-    }
-  }
-
   // If the browser window is 1920px and smaller
   @media all and (max-width: 1920px) {
-    max-height: 1620px;
-    .background_container {
-      max-height: 1620px;
-
-      .background__working_man {
-        height: 900px;
-        width: 900px;
-        right: 5%;
-      }
-      .background__pattern {
+    .landing-section__background-container {
+      .background-container__background-pattern {
         width: 1920px;
       }
-
-      .text_container {
-        .title--landing_section {
-          font-size: 60px;
-        }
-        .subtitle--landing_section {
-          font-size: 25px;
-        }
-        .button--landing_section {
-          font-size: 18px;
-          height: 50px;
-          width: 250px;
-        }
+      .background-container__figure {
+        right: 5%;
       }
     }
   }
 
   @media all and (max-width: 1690px) {
-    max-height: 1490px;
-    .background_container {
-      max-height: 1490px;
-      .background__pattern {
-        width: 1690px;
+    max-height: 980px;
+    .landing-section__background-container {
+      max-height: 980px;
+
+      .background-container__background-pattern {
+        top: -10%;
       }
     }
   }
 
-  @media all and (max-width: 1280px) {
-    max-height: 1080px;
+  @media all and (max-width: 1260px) {
+    max-height: 860px;
 
-    .background_container {
-      max-height: 1080px;
+    .landing-section__background-container {
+      max-height: 860px;
 
-      .background__working_man {
+      .background-container__figure {
         height: 650px;
         width: 650px;
         left: 10%;
         right: 0;
       }
-
-      .background__pattern {
-        width: 1280px;
+      .background-container__background-pattern {
+        width: 1690px;
       }
 
-      .text_container {
+      .landing-section__text-container {
         left: 50%;
         transform: translateX(-50%);
         top: 15%;
         width: 100%;
-        .title--landing_section {
-          font-size: 40px;
-        }
-        .subtitle--landing_section {
-          font-size: 20px;
-        }
-        .button--landing_section {
+        .landing-section__button {
           font-size: 14px;
+          width: 220px;
+          height: 50px;
         }
       }
     }
@@ -144,50 +121,46 @@
 
   @media all and (max-width: 980px) {
     max-height: 780px;
-    .background_container {
+    .landing-section__background-container {
       max-height: 780px;
-      .background__working_man {
+      .background-container__figure {
         height: 600px;
         width: 600px;
       }
-      .background__pattern {
-        width: 980px;
+      .background-container__background-pattern {
+        top: -5%;
+        width: 1260px;
       }
     }
   }
 
-  @media all and (max-width: 760px) {
-    .background_container {
-      .background__working_man {
+  @media all and (max-width: 780px) {
+    .landing-section__background-container {
+      .background-container__figure {
         height: 500px;
         width: 500px;
-      }
-      .background__pattern {
-        width: 1200px;
       }
     }
   }
   // hide the image on phones
   @media all and (max-width: 480px) {
-    .background_container {
-      .background__working_man {
+    .landing-section__background-container {
+      .background-container__figure {
         height: 400px;
         width: 400px;
         left: 0;
       }
 
-      .text_container {
+      .landing-section__text-container {
         top: 25%;
-        .title--landing_section {
-          font-size: 30px;
+        .landing-section__title {
           margin: 10px 0;
         }
-        .subtitle--landing_section {
-          font-size: 18px;
+        .landing-section__subtitle {
           max-width: 300px;
           margin: auto;
         }
-        .button--landing_section {
+        .landing-section__button {
           width: 200px;
           height: 45px;
           font-size: 12px;

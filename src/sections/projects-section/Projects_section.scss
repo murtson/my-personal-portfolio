@@ -10,10 +10,11 @@
     margin: 0 auto;
   }
 
-  @media all and (max-width: 480px) {
+  @media all and (max-width: 780px) {
     padding-bottom: 75px;
 
     .projects-container {
+      grid-auto-rows: 500px;
       gap: 50px;
     }
   }

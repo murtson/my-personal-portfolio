@@ -6,23 +6,7 @@
   align-items: center;
   justify-content: center;
 
-  .green {
-    background: linear-gradient(180deg, #a2fbf1, #1bc8b1);
-  }
-
-  .blue {
-    background: linear-gradient(180deg, #7fdafc, #3388d2);
-  }
-
-  .pink {
-    background: linear-gradient(180deg, #ffb8f1, #ee75ce);
-  }
-
-  .orange {
-    background: linear-gradient(180deg, #fee4cb, #ff9751);
-  }
-
-  .icon-container {
+  .competence-card__icon-container {
     height: 100px;
     width: 100px;
     border-radius: 50%;
@@ -31,118 +15,121 @@
     justify-content: center;
     align-items: center;
 
-    .competence-icon {
+    .competence-card__competence-icon {
       height: 50px;
       width: 50px;
     }
   }
 
-  .text-container {
-    //max-width: 230px;
-    .competence-title {
-      font-size: 30px;
-      font-weight: 600;
-      color: #5d5d5d;
+  .icon-container-color--green {
+    background: linear-gradient(180deg, #a2fbf1, #1bc8b1);
+  }
 
+  .icon-container-color--blue {
+    background: linear-gradient(180deg, #7fdafc, #3388d2);
+  }
+
+  .icon-container-color--pink {
+    background: linear-gradient(180deg, #ffb8f1, #ee75ce);
+  }
+
+  .icon-container-color--orange {
+    background: linear-gradient(180deg, #fee4cb, #ff9751);
+  }
+
+  .competence-card__text-container {
+    //max-width: 230px;
+    .competence-card__title {
       text-align: center;
       margin: 20px 0;
+      font-weight: 600;
     }
-    .competence-text {
+    .competence--card__text {
       text-align: center;
-      color: #5d5d5d;
-      font-size: 20px;
-      font-weight: 500;
-      line-height: 1.6;
       margin: 0 0 10px 0;
     }
   }
 
-  .progress-bar-container {
+  .competence-card__progress-container {
     width: 95%;
 
-    .width-90 {
-      width: 90%;
-    }
-
-    .width-80 {
-      width: 80%;
-    }
-
-    .width-50 {
-      width: 50%;
-    }
-
-    .width-0 {
-      width: 0%;
-    }
-
-    .progress-bar-stats-container {
+    .progress-bar__stats-container {
       display: flex;
       justify-content: space-between;
-
-      p {
-        font-size: 22px;
-      }
     }
 
-    .progress-bar--background {
+    .progress-bar__bar-background {
       width: 100%;
       height: 12px;
       color: white;
       border-radius: 10px;
       box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+
+      .progress-bar__bar-progress {
+        height: 12px;
+        background: linear-gradient(45deg, #6431f6, #fc8ab5);
+        border-radius: 10px;
+      }
     }
 
-    .progress-bar--progress {
-      height: 12px;
-      background: linear-gradient(45deg, #6431f6, #fc8ab5);
-      border-radius: 10px;
+    .progress-width--90 {
+      width: 90%;
+    }
+
+    .progress-width--80 {
+      width: 80%;
+    }
+
+    .progress-width--50 {
+      width: 50%;
+    }
+
+    .progress-width--0 {
+      width: 0%;
     }
   }
 
-  @media all and (max-width: 480px) {
-    .icon-container {
+  /* ----------- RESPONSIVNESS  -----------  */
+
+  @media all and (max-width: 780px) {
+    .competence-card__icon-container {
       height: 80px;
       width: 80px;
       border-radius: 50%;
-
       display: flex;
       justify-content: center;
       align-items: center;
 
-      .competence-icon {
+      .competence-card__competence-icon {
         height: 40px;
         width: 40px;
       }
     }
 
-    .progress-bar-container {
+    .competence-card__progress-container {
       padding: 0 20px;
 
-      .progress-bar-stats-container {
+      .progress-bar__stats-container {
         p {
-          font-size: 16px;
           margin: 5px 0;
         }
       }
 
-      .progress-bar--background {
+      .progress-bar__bar-background {
         height: 8px;
       }
-      .progress-bar--progress {
+      .progress-bar__bar-progress {
         height: 8px;
       }
     }
 
-    .text-container {
-      .competence-title {
-        font-size: 18px;
-        font-weight: 600;
+    .competence-card__text-container {
+      .competence-card__title {
         color: #5d5d5d;
         text-align: center;
         margin: 10px 0;
       }
-      .competence-text {
+      .competence--card__text {
         display: none;
       }
     }

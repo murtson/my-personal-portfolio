@@ -7,7 +7,7 @@ import ProjectCard from "../../componnents/project-card/Project_card";
 const ProjectSection = () => {
   return (
     <div className='projects-section'>
-      <SectionTitle title='MY WORK & PROJECTS'>
+      <SectionTitle title='my work & projects'>
         Here are the projects and earlier work I've delivered. This varies from
         proferssional work to school projects I've completed throughout my
         years. Feel free to have a look.

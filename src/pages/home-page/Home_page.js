@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import "./Home_page.css";
 import LandingSection from "../../sections/landing-section/Landing_section";
 import CompetenceSection from "../../sections/competence-section/Competence_section";

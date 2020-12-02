@@ -1,21 +1,24 @@
 import React from "react";
 import { useMediaQuery } from "react-responsive";
 import "./Landing_section.css";
-import WorkingMan from "../../assets/images/working-man.svg";
+import SVGfigure from "../../assets/images/working-man.svg";
 import Background from "../../assets/images/lp-bg.svg";
 
 const LandingSection = () => {
   return (
-    <div className='landing_section'>
-      <div className='background_container'>
-        <img src={Background} className='background__pattern'></img>
-        <img src={WorkingMan} className='background__working_man'></img>
-        <div className='text_container'>
-          <h1 className='title--landing_section'>Hi, I am Martin Mosesson</h1>
-          <h3 className='subtitle--landing_section'>
+    <div className='landing-section'>
+      <div className='landing-section__background-container'>
+        <img
+          src={Background}
+          className='background-container__background-pattern'
+        ></img>
+        <img src={SVGfigure} className='background-container__figure'></img>
+        <div className='landing-section__text-container'>
+          <h1 className='landing-section__title'>Hi, I am Martin Mosesson</h1>
+          <h5 className='landing-section__subtitle'>
             A passionate Software Enginner from Stockholm
-          </h3>
-          <button className='button--landing_section'>LET'S TALK!</button>
+          </h5>
+          <button className='landing-section__button'>LET'S TALK!</button>
         </div>
       </div>
     </div>
