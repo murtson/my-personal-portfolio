@@ -16,25 +16,27 @@
     align-items: center;
 
     .competence-card__competence-icon {
-      height: 50px;
-      width: 50px;
     }
   }
 
   .icon-container-color--green {
     background: linear-gradient(180deg, #a2fbf1, #1bc8b1);
+    // background: linear-gradient(0, #7878f5, #aad7ff);
   }
 
   .icon-container-color--blue {
     background: linear-gradient(180deg, #7fdafc, #3388d2);
+    // background: linear-gradient(0, #7878f5, #aad7ff);
   }
 
   .icon-container-color--pink {
     background: linear-gradient(180deg, #ffb8f1, #ee75ce);
+    // background: linear-gradient(0, #7878f5, #aad7ff);
   }
 
   .icon-container-color--orange {
     background: linear-gradient(180deg, #fee4cb, #ff9751);
+    // background: linear-gradient(0, #7878f5, #aad7ff);
   }
 
   .competence-card__text-container {
@@ -56,6 +58,9 @@
     .progress-bar__stats-container {
       display: flex;
       justify-content: space-between;
+      p {
+        font-weight: 600;
+      }
     }
 
     .progress-bar__bar-background {
@@ -67,7 +72,7 @@
 
       .progress-bar__bar-progress {
         height: 12px;
-        background: linear-gradient(45deg, #6431f6, #fc8ab5);
+        background: linear-gradient(45deg, #5d47f3, #a987f8);
         border-radius: 10px;
       }
     }
@@ -117,9 +122,9 @@
 
       .progress-bar__bar-background {
         height: 8px;
-      }
-      .progress-bar__bar-progress {
-        height: 8px;
+        .progress-bar__bar-progress {
+          height: 8px;
+        }
       }
     }
 

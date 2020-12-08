@@ -3,7 +3,7 @@ import "./Service_section.css";
 import SectionTitle from "../../componnents/section-title/Section_title";
 import ServiceCard from "../../componnents/service-card/Service_card";
 
-import WebIcon from "../../assets/icons/web-icon.svg";
+import WebIcon from "../../assets/icons/web-development.svg";
 import DesignIcon from "../../assets/icons/design-icon.svg";
 import AppIcon from "../../assets/icons/mobile-app.svg";
 

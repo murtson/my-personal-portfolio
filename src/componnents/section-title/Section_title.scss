@@ -6,17 +6,26 @@
   .title--section {
     margin: 15px auto;
     text-transform: capitalize;
-    max-width: 1280px;
+    max-width: 945px;
   }
 
   .subtitle--section {
     margin: 15px auto;
     width: auto;
-    max-width: 1280px;
+    max-width: 945px;
+    font-weight: 600;
   }
 
   .section_ending {
     margin-top: 30px;
     border: 1px solid #b9c3d1;
+  }
+
+  @media all and (max-width: 1260px) {
+    margin-bottom: 50px;
+  }
+
+  @media all and (max-width: 780px) {
+    margin-bottom: 25px;
   }
 }

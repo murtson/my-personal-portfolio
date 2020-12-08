@@ -1,0 +1,78 @@
+.double-button {
+  width: 200px;
+  height: 55px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2px;
+}
+
+.double-button .double-button__left-side {
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 70%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.double-button .double-button__right-side {
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 30%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.double-button .double-button__right-side img {
+  color: inherit;
+}
+
+.double-button .primary-button-color {
+  color: white;
+  background-color: #4d47f3;
+}
+
+.double-button .secondary-button-color {
+  color: #4d47f3;
+  background-color: #e4dcfe;
+}
+
+.double-button-sm {
+  width: 192px;
+  height: 58px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.double-button-md {
+  width: 224px;
+  height: 62px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.double-button-lg {
+  width: 300px;
+  height: 72px;
+  font-size: 14px;
+  font-weight: 600;
+}
+/*# sourceMappingURL=Double_button.css.map */

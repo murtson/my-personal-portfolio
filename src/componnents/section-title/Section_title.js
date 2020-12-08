@@ -5,7 +5,7 @@ const Section_title = (props) => {
   return (
     <div className='section-title'>
       <h3 className='title--section'>{props.title}</h3>
-      <h5 className='subtitle--section'>{props.children}</h5>
+      <p className='subtitle--section'>{props.children}</p>
       {/* <hr className='section_ending' /> */}
     </div>
   );

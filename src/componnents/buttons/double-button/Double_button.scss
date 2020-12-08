@@ -1,0 +1,61 @@
+.double-button {
+  width: 200px;
+  height: 55px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  gap: 2px;
+
+  .double-button__left-side {
+    text-transform: uppercase;
+    display: flex;
+    height: 100%;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+  }
+  .double-button__right-side {
+    text-transform: uppercase;
+    display: flex;
+    height: 100%;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    img {
+      color: inherit;
+    }
+  }
+
+  .primary-button-color {
+    color: white;
+    background-color: #4d47f3;
+  }
+
+  .secondary-button-color {
+    color: #4d47f3;
+    background-color: #e4dcfe;
+  }
+}
+
+.double-button-sm {
+  width: 192px;
+  height: 58px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.double-button-md {
+  width: 224px;
+  height: 62px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.double-button-lg {
+  width: 300px;
+  height: 72px;
+  font-size: 14px;
+  font-weight: 600;
+}

@@ -4,14 +4,17 @@ import FacebookIcon from "../../assets/icons/facebook-square-brands.svg";
 import LinkedInIcon from "../../assets/icons/linkedin-brands.svg";
 import GithubIcon from "../../assets/icons/github-square-brands.svg";
 
+import DoubleButton from "../buttons/double-button/Double_button";
+import DefaultButton from "../buttons/default-button/Default_button";
+
 const FooterLink = (props) => {
   return (
     <div className='footer-link'>
-      <div className='icon-container--footer-link'>
+      <div className='footer-link__icon-container'>
         <img src={props.icon} alt='footer-icon'></img>
       </div>
-      <div className='title-container--footer-link'>
-        <h5>{props.children}</h5>
+      <div className='footer-link__title-container'>
+        <p>{props.children}</p>
       </div>
     </div>
   );
@@ -21,13 +24,16 @@ const Footer = (props) => {
   return (
     <footer className='footer'>
       <div className='footer-content-container'>
-        <h2>Interested in Collaboration?</h2>
-        <div className='text-button-container'>
-          <h5>
+        <h3>Interested in Collaboration?</h3>
+        <div className='footer__text-container'>
+          <p>
             Challenge me. I am open to any idea - big or small. Feel free to
             contact me here, or on my other social media platforms
-          </h5>
-          <button className='footer-button'>Let's connect</button>
+          </p>
+          {/*  <button className='footer-button'>Let's connect</button> */}
+          <DoubleButton secondaryColor={false} size='medium'>
+            Let's connect
+          </DoubleButton>
         </div>
         <div className='footer-links-container'>
           <FooterLink icon={LinkedInIcon}>LinkedIn</FooterLink>

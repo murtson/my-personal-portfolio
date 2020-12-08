@@ -1,7 +1,7 @@
 .service-card {
   -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
+  /* border-radius: 10px; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,35 +17,37 @@
           flex-direction: column;
 }
 
-.service-card .text-container--serivce {
+.service-card .service-icon {
+  height: 75px;
+  width: 75px;
+}
+
+.service-card .service-card__text-container {
   padding: 0 15%;
 }
 
-.service-card .text-container--serivce h4 {
+.service-card .service-card__text-container h5 {
   text-align: center;
-  font-size: 30px;
   margin: 15px;
-  font-weight: 700;
-  color: #5d5d5d;
+  font-weight: 600;
 }
 
-.service-card .text-container--serivce p {
+.service-card .service-card__text-container p {
   text-align: center;
-  color: #5d5d5d;
-  font-size: 20px;
-  font-weight: 500;
+  margin: 0;
+}
+
+@media all and (max-width: 1260px) {
+  .service-card .service-icon {
+    height: 70px;
+    width: 70px;
+  }
 }
 
 @media all and (max-width: 780px) {
-  .service-card .icon--service {
+  .service-card .service-icon {
     height: 65px;
     width: 65px;
-  }
-  .service-card .text-container--serivce h4 {
-    font-size: 20px;
-  }
-  .service-card .text-container--serivce p {
-    font-size: 16px;
   }
 }
 /*# sourceMappingURL=Service_card.css.map */

@@ -1,20 +1,27 @@
 .Service-section {
-  padding: 0 6% 6% 6%;
+  padding: 0 15% 15% 15%;
   overflow: hidden;
 
   .service-cards-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    max-width: 1280px;
+    grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
     margin: 0 auto;
     gap: 20px;
     grid-auto-rows: 400px;
   }
 
-  @media all and (max-width: 780px) {
+  /* <---------- RESPONSIVNESS ------------> */
+
+  @media all and (max-width: 1260px) {
     padding-bottom: 75px;
     .service-cards-container {
-      grid-auto-rows: minmax(280px, 300px);
+      grid-auto-rows: 350px;
+    }
+  }
+
+  @media all and (max-width: 780px) {
+    padding-bottom: 50px;
+    .service-cards-container {
     }
   }
 }

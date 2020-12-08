@@ -1,25 +1,31 @@
 .Service-section {
-  padding: 0 6% 6% 6%;
+  padding: 0 15% 15% 15%;
   overflow: hidden;
+  /* <---------- RESPONSIVNESS ------------> */
 }
 
 .Service-section .service-cards-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  max-width: 1280px;
+  -ms-grid-columns: (minmax(315px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
   margin: 0 auto;
   gap: 20px;
   grid-auto-rows: 400px;
 }
 
-@media all and (max-width: 780px) {
+@media all and (max-width: 1260px) {
   .Service-section {
     padding-bottom: 75px;
   }
   .Service-section .service-cards-container {
-    grid-auto-rows: minmax(280px, 300px);
+    grid-auto-rows: 350px;
+  }
+}
+
+@media all and (max-width: 780px) {
+  .Service-section {
+    padding-bottom: 50px;
   }
 }
 /*# sourceMappingURL=Service_section.css.map */
