@@ -1,6 +1,5 @@
 .service-card {
-  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 0 30px rgba(0, 0, 0, 0.2); */
   /* border-radius: 10px; */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -15,26 +14,77 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /*  border: 2px solid black; */
+  border-radius: 0px;
+  -webkit-box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+  /* $this: &;
+
+  &:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  } */
 }
 
-.service-card .service-icon {
-  height: 75px;
-  width: 75px;
+.service-card .yellow {
+  background-color: #ffc64d;
+}
+
+.service-card .blue {
+  background-color: #377fea;
+}
+
+.service-card .dark {
+  background-color: #253267;
+}
+
+.service-card .service-card__icon-container {
+  width: 100%;
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.service-card .service-card__icon-container .service-icon {
+  width: 200px;
 }
 
 .service-card .service-card__text-container {
-  padding: 0 15%;
+  width: 100%;
+  height: 35%;
+  padding: 15px 35px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.service-card .service-card__text-container h5 {
-  text-align: center;
-  margin: 15px;
+.service-card .service-card__text-container .service-card-title {
+  text-align: left;
+  margin: 0;
   font-weight: 600;
 }
 
-.service-card .service-card__text-container p {
-  text-align: center;
+.service-card .service-card__text-container .service-card-text {
+  text-align: left;
   margin: 0;
+  font-size: 14px;
 }
 
 @media all and (max-width: 1260px) {

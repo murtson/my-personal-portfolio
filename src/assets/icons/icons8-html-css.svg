@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56.616" height="43" viewBox="0 0 56.616 43">
+  <g id="icons8-html-css" transform="translate(-691 -1760.555)">
+    <g id="icons8-css3" transform="translate(714.829 1766.726)">
+      <path id="Path_964" data-name="Path 964" d="M39.787,5H7L9.893,37.952l13.5,3.877,13.5-3.877L39.787,5Z" transform="translate(-7 -5)" fill="#377fea"/>
+      <path id="Path_965" data-name="Path 965" d="M24,8V38.947l10.8-3.1L37.211,8Z" transform="translate(-7.607 -5.107)" fill="#61a1ff"/>
+      <path id="Path_966" data-name="Path 966" d="M32.775,13H24v3.891h4.725l-.289,3.891H24v3.891h4.243l-.289,4.377L24,30.411V34.5l7.618-2.529.675-11.186h0Z" transform="translate(-7.607 -5.285)" fill="#fff"/>
+      <path id="Path_967" data-name="Path 967" d="M23.672,13v3.891H15.089L14.8,13Zm-4.436,7.782.193,3.891h4.243V20.782Zm.386,5.836H15.764l.289,5.35L23.672,34.5V30.411l-3.954-1.362Z" transform="translate(-7.278 -5.285)" fill="#eee"/>
+    </g>
+    <g id="icons8-html-5" transform="translate(691 1760.555)">
+      <path id="Path_949" data-name="Path 949" d="M39.91,5H7L9.9,38.076l13.551,3.891,13.551-3.891L39.91,5Z" transform="translate(-7 -5)" fill="#de5e79"/>
+      <path id="Path_950" data-name="Path 950" d="M24,8V39.062l10.841-3.116L37.261,8Z" transform="translate(-7.545 -5.096)" fill="#ff8797"/>
+      <path id="Path_951" data-name="Path 951" d="M24,24.716V20.811h8.324l-.678,11.228L24,34.577v-4.1l3.969-1.367.29-4.393H24Zm8.615-7.811L32.905,13H24v3.905Z" transform="translate(-7.545 -5.256)" fill="#fff"/>
+      <path id="Path_952" data-name="Path 952" d="M23.708,30.476v4.1l-7.647-2.538-.387-5.37h3.872l.194,2.441ZM18.965,16.905h4.743V13H14.9l.678,11.716h8.131V20.811H19.256Z" transform="translate(-7.253 -5.256)" fill="#eee"/>
+    </g>
+  </g>
+</svg>

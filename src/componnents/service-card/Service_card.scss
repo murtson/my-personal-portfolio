@@ -1,27 +1,65 @@
 .service-card {
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 0 30px rgba(0, 0, 0, 0.2); */
   /* border-radius: 10px; */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 
-  .service-icon {
-    height: 75px;
-    width: 75px;
+  box-sizing: border-box;
+  /*  border: 2px solid black; */
+  border-radius: 0px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+
+  /* $this: &;
+
+  &:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  } */
+
+  .yellow {
+    background-color: #ffc64d;
+  }
+
+  .blue {
+    background-color: #377fea;
+  }
+
+  .dark {
+    background-color: #253267;
+  }
+
+  .service-card__icon-container {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .service-icon {
+      width: 200px;
+    }
   }
 
   .service-card__text-container {
-    padding: 0 15%;
+    width: 100%;
+    height: 35%;
+    padding: 15px 35px;
+    box-sizing: border-box;
+    display: flex;
 
-    h5 {
-      text-align: center;
-      margin: 15px;
+    justify-content: center;
+    flex-direction: column;
+
+    .service-card-title {
+      text-align: left;
+      margin: 0;
       font-weight: 600;
     }
-    p {
-      text-align: center;
+    .service-card-text {
+      text-align: left;
       margin: 0;
+      font-size: 14px;
     }
   }
 

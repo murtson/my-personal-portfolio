@@ -1,5 +1,5 @@
 .projects-section {
-  padding: 0 15% 15% 15%;
+  padding: 0 10% 5% 10%;
 
   .projects-container {
     display: grid;
@@ -7,6 +7,7 @@
     grid-auto-rows: 600px;
     gap: 100px;
     margin: 0 auto;
+    width: 1180px;
   }
 
   @media all and (max-width: 780px) {

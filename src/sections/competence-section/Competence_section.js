@@ -6,80 +6,119 @@ import CompetenceCard from "../../componnents/competence-card/Competence_card";
 import javascripticon from "../../assets/icons/icons8-javascript.svg";
 import pythonicon from "../../assets/icons/icons8-python.svg";
 import javaicon from "../../assets/icons/icons8-java.svg";
-import htmlicon from "../../assets/icons/icons8-html-5.svg";
-import GraduationImage from "../../assets/images/Graduation.svg";
+import htmlicon from "../../assets/icons/icons8-html-css.svg";
+import FirebaseIcon from "../../assets/icons/firebase-icon.svg";
+import ReactIcon from "../../assets/icons/react-icon.svg";
+import ReactNativeIcon from "../../assets/icons/react-native-icon.svg";
+import MeteorIcon from "../../assets/icons/meteor-icon.svg";
+import AdobeXDIcon from "../../assets/icons/adobe-xd-icon.svg";
+import GithubIcon from "../../assets/icons/github-icon.svg";
 
-import DefaultButton from "../../componnents/buttons/default-button/Default_button";
+import BgCircles from "../../assets/images/bg-circles-01.svg";
+
+import CodingLanguageUnderline from "../../assets/icons/coding-language-underline.svg";
+import LibrariesUnderline from "../../assets/icons/libraries-underline.svg";
+import ToolsUnderline from "../../assets/icons/tools-underline.svg";
+
+const CompetenceSubTitle = (props) => {
+  return (
+    <div className='competence-subtitle'>
+      <h4>{props.children}</h4>
+      {/*    <img className='subtitle-underline' src={props.underline}></img> */}
+    </div>
+  );
+};
 
 const Competence_section = () => {
   return (
     <div className='competence-section'>
-      <SectionTitle title='competence & education'>
+      <SectionTitle title='My competence and expertise' tag='competence'>
         Here are some highlights of my areas of expertise, as well as my
         education. A more detailed representation can be found in my CV.
       </SectionTitle>
+      <img src={BgCircles} className='background-circles'></img>
+      <CompetenceSubTitle underline={CodingLanguageUnderline}>
+        Coding languages
+      </CompetenceSubTitle>
       <div className='competence-cards-container'>
         <CompetenceCard
-          color='green'
           title='Javascript'
           icon={javascripticon}
           time='3 years'
           percent='80'
-        >
-          Worked on varies different projects involving Javascript. Efficient
-          with modern techniques and frameworks such as React and Meteor
-        </CompetenceCard>
+          color='red'
+        ></CompetenceCard>
         <CompetenceCard
-          color='blue'
           title='HTML/CSS'
           icon={htmlicon}
           time='3 years'
           percent='90'
-        >
-          Worked on varies different projects involving Javascript. Efficient
-          with modern techniques and frameworks such as React and Meteor
-        </CompetenceCard>
+          color='red'
+        ></CompetenceCard>
         <CompetenceCard
-          color='pink'
           title='Python'
           icon={pythonicon}
           time='1 year'
           percent='50'
-        >
-          Worked on varies different projects involving Javascript. Proficient
-          with popular frameworks such as React JS and Meteor JS
-        </CompetenceCard>
-        <CompetenceCard
+          color='red'
+        ></CompetenceCard>
+        {/*    <CompetenceCard
           color='orange'
           title='Java'
           icon={javaicon}
           time='Upcoming'
           percent='0'
-        >
-          Worked on varies different projects involving Javascript. Proficient
-          with popular frameworks such as React JS and Meteor JS
-        </CompetenceCard>
+        ></CompetenceCard> */}
       </div>
-      <div className='education-section'>
-        <div className='education-section__text-container'>
-          <h4>Education</h4>
-          <p>
-            I have a Bachelor's degree in Interactive Media Technology from KTH.
-            I am currently pursuing my Master's Degree and expect to finish the
-            spring 2021. Besides this, I have also taken multiple online Courses
-            in Web Development. All can be found in my CV.
-          </p>
-          {/* <div className='education-button-wrapper'>
-            <button className='CV-button'>Download CV</button>
-            <div className='CV-button-background'></div>
-          </div> */}
-          <DefaultButton secondaryColor={true} size='medium'>
-            DOWNLOAD CV
-          </DefaultButton>
-        </div>
-        <div className='image-container'>
-          <img src={GraduationImage} alt='Graduation image'></img>
-        </div>
+      <CompetenceSubTitle underline={LibrariesUnderline}>
+        Libraries
+      </CompetenceSubTitle>
+      <div className='competence-cards-container'>
+        <CompetenceCard
+          title='React JS'
+          icon={ReactIcon}
+          time='3 years'
+          percent='70'
+          color='blue'
+        ></CompetenceCard>
+        <CompetenceCard
+          title='React Native'
+          icon={ReactNativeIcon}
+          time='3 years'
+          percent='60'
+          color='blue'
+        ></CompetenceCard>
+        <CompetenceCard
+          title='Firebase'
+          icon={FirebaseIcon}
+          time='1 year'
+          percent='70'
+          color='blue'
+        ></CompetenceCard>
+        <CompetenceCard
+          title='Meteor JS'
+          icon={MeteorIcon}
+          time='Upcoming'
+          percent='80'
+          color='blue'
+        ></CompetenceCard>
+      </div>
+      <CompetenceSubTitle underline={ToolsUnderline}>Tools</CompetenceSubTitle>
+      <div className='competence-cards-container'>
+        <CompetenceCard
+          title='Adobe XD'
+          icon={AdobeXDIcon}
+          time='1 year'
+          percent='60'
+          color='yellow'
+        ></CompetenceCard>
+        <CompetenceCard
+          title='Github'
+          icon={GithubIcon}
+          time='3 years'
+          percent='80'
+          color='yellow'
+        ></CompetenceCard>
       </div>
     </div>
   );

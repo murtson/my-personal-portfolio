@@ -3,53 +3,55 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+
   justify-content: center;
 
-  .competence-card__icon-container {
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
+  $this: &;
 
+  &:hover {
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+  }
+
+  .competence-card__icon-container {
+    border-radius: 50%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    margin-bottom: 15px;
 
     .competence-card__competence-icon {
+      height: 40px;
+      width: 40px;
     }
   }
 
   .icon-container-color--green {
-    background: linear-gradient(180deg, #a2fbf1, #1bc8b1);
+    /* background: linear-gradient(180deg, #6573ff, #7f8bf9); */
     // background: linear-gradient(0, #7878f5, #aad7ff);
   }
 
   .icon-container-color--blue {
-    background: linear-gradient(180deg, #7fdafc, #3388d2);
+    /* background: linear-gradient(180deg, #43e7fc, #00c5de); */
     // background: linear-gradient(0, #7878f5, #aad7ff);
   }
 
   .icon-container-color--pink {
-    background: linear-gradient(180deg, #ffb8f1, #ee75ce);
+    /* background: linear-gradient(180deg, #ff8797, #ff8797); */
     // background: linear-gradient(0, #7878f5, #aad7ff);
   }
 
   .icon-container-color--orange {
-    background: linear-gradient(180deg, #fee4cb, #ff9751);
+    /*   background: linear-gradient(180deg, #f6d185, #ffc64d); */
     // background: linear-gradient(0, #7878f5, #aad7ff);
   }
 
-  .competence-card__text-container {
-    //max-width: 230px;
-    .competence-card__title {
-      text-align: center;
-      margin: 20px 0;
-      font-weight: 600;
-    }
-    .competence--card__text {
-      text-align: center;
-      margin: 0 0 10px 0;
-    }
+  .competence-card__title {
+    display: flex;
+    align-items: flex-end;
+    justify-content: left;
+    margin: 0;
+    font-weight: 600;
+    color: #253267;
   }
 
   .competence-card__progress-container {
@@ -59,21 +61,33 @@
       display: flex;
       justify-content: space-between;
       p {
-        font-weight: 600;
+        font-weight: 500;
+        margin: 10px 0;
       }
     }
 
     .progress-bar__bar-background {
       width: 100%;
-      height: 12px;
+      height: 8px;
       color: white;
-      border-radius: 10px;
-      box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+      border-radius: 8px;
+      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+
+      .red {
+        background: linear-gradient(45deg, #c43553, #ff8797);
+      }
+
+      .blue {
+        background: linear-gradient(45deg, #377fea, #00c5de);
+      }
+
+      .yellow {
+        background: linear-gradient(45deg, #f8af4d, #ffc64d);
+      }
 
       .progress-bar__bar-progress {
-        height: 12px;
-        background: linear-gradient(45deg, #5d47f3, #a987f8);
-        border-radius: 10px;
+        height: 8px;
+        border-radius: 8px;
       }
     }
 
@@ -85,8 +99,28 @@
       width: 80%;
     }
 
+    .progress-width--70 {
+      width: 70%;
+    }
+
     .progress-width--50 {
       width: 50%;
+    }
+
+    .progress-width--40 {
+      width: 40%;
+    }
+
+    .progress-width--60 {
+      width: 60%;
+    }
+
+    .progress-width--30 {
+      width: 30%;
+    }
+
+    .progress-width--20 {
+      width: 20%;
     }
 
     .progress-width--0 {
@@ -133,6 +167,7 @@
         color: #5d5d5d;
         text-align: center;
         margin: 10px 0;
+        font-size: 18px;
       }
       .competence--card__text {
         display: none;

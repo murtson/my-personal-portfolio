@@ -1,0 +1,84 @@
+.education-card {
+  -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  padding: 25px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+
+.education-card .education-arrow-up {
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transform: translate(65%, -100%);
+          transform: translate(65%, -100%);
+}
+
+.education-card .education-arrow-down {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  -webkit-transform: translate(65%, 100%);
+          transform: translate(65%, 100%);
+}
+
+.education-card .education-card-icon-container {
+  border-radius: 50%;
+  background-color: #e5edf9;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.education-card .education-card-icon-container .education-card-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.education-card .education-card-text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 70%;
+}
+
+.education-card .education-card-text-container .education-card-exam-text {
+  font-weight: 600;
+  height: 40%;
+}
+
+.education-card .education-card-text-container .education-card-school-text {
+  font-weight: 500;
+  height: 40%;
+  font-size: 14px;
+}
+
+.education-card .education-card-text-container .education-card-time-text {
+  font-weight: 600;
+  height: 20%;
+}
+
+.education-card .education-card-text-container p {
+  line-height: 1.6;
+  margin: 0;
+}
+/*# sourceMappingURL=Education_card.css.map */

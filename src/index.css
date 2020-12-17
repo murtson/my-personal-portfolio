@@ -8,6 +8,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 body {
   margin: 0;
   /* font-family: "Roboto", sans-serif; */
@@ -16,8 +18,8 @@ body {
   /*  font-family: "Mulish", sans-serif; */
   /* font-family: "Montserrat", sans-serif; */
   /* font-family: "Nunito", sans-serif; */
-  font-family: "Vollkorn", serif;
-  /*   font-family: "Quicksand", sans-serif; */
+  /*   font-family: "Vollkorn", serif; */
+  font-family: "Poppins", sans-serif;
   /*   font-family: "Open Sans", sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -28,7 +30,8 @@ h1 {
   font-size: 85px;
   font-weight: 700;
   color: #2a2a2a;
-  line-height: 1.6;
+  font-family: "Vollkorn", serif;
+  line-height: 2;
   color: #403bd6;
 }
 
@@ -36,39 +39,44 @@ h2 {
   font-size: 62px;
   font-weight: 700;
   color: #403bd6;
-  line-height: 1.6;
+  font-family: "Vollkorn", serif;
+  line-height: 2;
 }
 
 h3 {
-  font-size: 54px;
+  font-size: 34px;
   font-weight: 600;
-  color: #403bd6;
-  line-height: 1.6;
+  color: #253267;
+  line-height: 2;
+  font-family: "Poppins", sans-serif;
 }
 
 h4 {
-  font-size: 46px;
+  font-size: 28px;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
-  color: #18243b;
-  line-height: 1.6;
+  color: #253267;
+  line-height: 2;
 }
 
 h5 {
-  font-size: 32px;
+  font-size: 22px;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
-  color: #18243b;
-  line-height: 1.6;
+  color: #253267;
+  line-height: 2;
 }
 
 p {
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-size: 26px;
-  color: #18243b;
-  line-height: 1.6;
+  font-size: 16px;
+  color: #5a5a5a;
+  line-height: 2;
 }
 
 /* <---------- Responsivness ------------> */
-
+/* 
 @media all and (max-width: 1920px) {
   h1 {
     font-size: 52px;
@@ -93,7 +101,7 @@ p {
   p {
     font-size: 20px;
   }
-}
+} */
 
 @media all and (max-width: 1590px) {
   h1 {

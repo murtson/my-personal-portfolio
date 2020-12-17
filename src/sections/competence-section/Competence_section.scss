@@ -1,18 +1,43 @@
 .competence-section {
-  padding: 0 15% 15% 15%;
+  padding: 5% 10%;
   overflow: hidden;
+  position: relative;
+
+  .background-circles {
+    position: absolute;
+    right: 0;
+    transform: translateX(65%);
+    top: 100px;
+  }
+
+  .competence-subtitle {
+    h4 {
+      margin: 0;
+      font-weight: 600;
+      text-decoration: underline;
+    }
+
+    .subtitle-underline {
+      transform: translateY(-15px);
+    }
+
+    width: 1180px;
+    margin: 75px auto;
+  }
 
   .competence-cards-container {
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-auto-rows: 500px;
-    gap: 50px;
+    width: 1180px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: auto;
+    gap: 75px 150px;
   }
 
   .education-section {
-    padding-top: 100px;
-    gap: 75px;
+    padding-top: 10%;
+    width: 1180px;
+    gap: 50px;
     display: grid;
     margin: auto;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -49,20 +74,21 @@
         }
       }
 
-      h4 {
-        margin: 10px 0;
+      h5 {
+        margin: 0 0 35px 0;
         text-transform: capitalize;
         font-weight: 600;
-        color: #2a2a2a;
+        /* color: #2a2a2a; */
       }
       p {
-        margin-bottom: 50px;
+        margin-bottom: 100px;
+        line-height: 2.2;
       }
     }
 
     .image-container {
       display: flex;
-      align-items: center;
+      align-items: flex-end;
       justify-content: flex-end;
       width: 100%;
       height: 100%;

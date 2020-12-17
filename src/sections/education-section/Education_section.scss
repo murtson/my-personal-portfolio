@@ -1,0 +1,23 @@
+.education-section {
+  padding: 0 10% 10% 10%;
+
+  .education-cards-container {
+    width: 1180px;
+    margin: 0 auto;
+    margin-top: 250px;
+    display: grid;
+    grid-template-columns:
+      minmax(200px, 1fr) minmax(200px, 1fr) minmax(200px, 1fr)
+      220px;
+    grid-auto-rows: 280px;
+    gap: 25px;
+  }
+  .download-cv-button {
+    background-color: #6573ff;
+    color: white;
+    border-radius: 10px;
+    border-style: none;
+    font-family: inherit;
+    font-size: 16px;
+  }
+}

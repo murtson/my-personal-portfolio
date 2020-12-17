@@ -24,7 +24,11 @@ const listTagsTwo = [
 const ProjectSection = () => {
   return (
     <div className='projects-section'>
-      <SectionTitle title='my work & projects'>
+      <SectionTitle
+        title='Delivered Projects & Work'
+        tag='Projects'
+        rightAlign={true}
+      >
         Here are the projects and earlier work I've delivered. This varies from
         proferssional work to school projects I've completed throughout my
         years. Feel free to have a look.

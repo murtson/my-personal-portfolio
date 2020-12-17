@@ -1,0 +1,25 @@
+.education-section {
+  padding: 0 10% 10% 10%;
+}
+
+.education-section .education-cards-container {
+  width: 1180px;
+  margin: 0 auto;
+  margin-top: 250px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(200px, 1fr) minmax(200px, 1fr) minmax(200px, 1fr) 220px;
+      grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr) minmax(200px, 1fr) 220px;
+  grid-auto-rows: 280px;
+  gap: 25px;
+}
+
+.education-section .download-cv-button {
+  background-color: #6573ff;
+  color: white;
+  border-radius: 10px;
+  border-style: none;
+  font-family: inherit;
+  font-size: 16px;
+}
+/*# sourceMappingURL=Education_section.css.map */

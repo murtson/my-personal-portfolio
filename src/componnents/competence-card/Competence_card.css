@@ -8,59 +8,64 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   /* ----------- RESPONSIVNESS  -----------  */
 }
 
+.competence-card:hover {
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+}
+
 .competence-card .competence-card__icon-container {
-  height: 100px;
-  width: 100px;
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 15px;
+}
+
+.competence-card .competence-card__icon-container .competence-card__competence-icon {
+  height: 40px;
+  width: 40px;
 }
 
 .competence-card .icon-container-color--green {
-  background: -webkit-gradient(linear, left top, left bottom, from(#a2fbf1), to(#1bc8b1));
-  background: linear-gradient(180deg, #a2fbf1, #1bc8b1);
+  /* background: linear-gradient(180deg, #6573ff, #7f8bf9); */
 }
 
 .competence-card .icon-container-color--blue {
-  background: -webkit-gradient(linear, left top, left bottom, from(#7fdafc), to(#3388d2));
-  background: linear-gradient(180deg, #7fdafc, #3388d2);
+  /* background: linear-gradient(180deg, #43e7fc, #00c5de); */
 }
 
 .competence-card .icon-container-color--pink {
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffb8f1), to(#ee75ce));
-  background: linear-gradient(180deg, #ffb8f1, #ee75ce);
+  /* background: linear-gradient(180deg, #ff8797, #ff8797); */
 }
 
 .competence-card .icon-container-color--orange {
-  background: -webkit-gradient(linear, left top, left bottom, from(#fee4cb), to(#ff9751));
-  background: linear-gradient(180deg, #fee4cb, #ff9751);
+  /*   background: linear-gradient(180deg, #f6d185, #ffc64d); */
 }
 
-.competence-card .competence-card__text-container .competence-card__title {
-  text-align: center;
-  margin: 20px 0;
+.competence-card .competence-card__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  margin: 0;
   font-weight: 600;
-}
-
-.competence-card .competence-card__text-container .competence--card__text {
-  text-align: center;
-  margin: 0 0 10px 0;
+  color: #253267;
 }
 
 .competence-card .competence-card__progress-container {
@@ -77,22 +82,34 @@
 }
 
 .competence-card .competence-card__progress-container .progress-bar__stats-container p {
-  font-weight: 600;
+  font-weight: 500;
+  margin: 10px 0;
 }
 
 .competence-card .competence-card__progress-container .progress-bar__bar-background {
   width: 100%;
-  height: 12px;
+  height: 8px;
   color: white;
-  border-radius: 10px;
-  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.competence-card .competence-card__progress-container .progress-bar__bar-background .red {
+  background: linear-gradient(45deg, #c43553, #ff8797);
+}
+
+.competence-card .competence-card__progress-container .progress-bar__bar-background .blue {
+  background: linear-gradient(45deg, #377fea, #00c5de);
+}
+
+.competence-card .competence-card__progress-container .progress-bar__bar-background .yellow {
+  background: linear-gradient(45deg, #f8af4d, #ffc64d);
 }
 
 .competence-card .competence-card__progress-container .progress-bar__bar-background .progress-bar__bar-progress {
-  height: 12px;
-  background: linear-gradient(45deg, #5d47f3, #a987f8);
-  border-radius: 10px;
+  height: 8px;
+  border-radius: 8px;
 }
 
 .competence-card .competence-card__progress-container .progress-width--90 {
@@ -103,8 +120,28 @@
   width: 80%;
 }
 
+.competence-card .competence-card__progress-container .progress-width--70 {
+  width: 70%;
+}
+
 .competence-card .competence-card__progress-container .progress-width--50 {
   width: 50%;
+}
+
+.competence-card .competence-card__progress-container .progress-width--40 {
+  width: 40%;
+}
+
+.competence-card .competence-card__progress-container .progress-width--60 {
+  width: 60%;
+}
+
+.competence-card .competence-card__progress-container .progress-width--30 {
+  width: 30%;
+}
+
+.competence-card .competence-card__progress-container .progress-width--20 {
+  width: 20%;
 }
 
 .competence-card .competence-card__progress-container .progress-width--0 {
@@ -146,6 +183,7 @@
     color: #5d5d5d;
     text-align: center;
     margin: 10px 0;
+    font-size: 18px;
   }
   .competence-card .competence-card__text-container .competence--card__text {
     display: none;
